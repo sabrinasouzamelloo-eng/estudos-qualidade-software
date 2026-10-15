@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 public class TesteBase extends DriveManager {
 
     private static WebDriver driver;
-    private static String URL = "https://share.google/TUd7XW8bUybQJupI1";
+    private static String URL = "https://www.saucedemo.com/";
 
     public static WebDriver getDriveManeger(){
 

@@ -13,9 +13,9 @@ public class LoginTask {
         loginPage = new LoginPage(this.driver);
     }
 
-    public void efetuarLogin() throws InterruptedException {
+    public void efetuarLogin() {
 
-        loginPage.getUserNameInput().sendKeys("standart_user");
+        loginPage.getUserNameInput().sendKeys("standard_user");
         loginPage.getPasswordInput().sendKeys("secret_sauce");
         loginPage.getLoginButton().click();
     }

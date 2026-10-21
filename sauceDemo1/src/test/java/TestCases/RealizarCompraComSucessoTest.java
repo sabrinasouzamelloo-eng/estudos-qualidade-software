@@ -1,6 +1,7 @@
 package TestCases;
 
 import Framework.TesteBase;
+import Tasks.CheckoutTask;
 import Tasks.LoginTask;
 import Tasks.ProdutoTask;
 import org.junit.jupiter.api.Test;
@@ -12,11 +13,13 @@ public class RealizarCompraComSucessoTest extends TesteBase {
 
     LoginTask loginTask = new LoginTask(driver);
     ProdutoTask produtoTask = new ProdutoTask(driver);
+    CheckoutTask checkoutTask = new CheckoutTask(driver);
 
     @Test
-    public void realizarCompra() throws InterruptedException{
+    public void realizarCompra(){
 
         loginTask.efetuarLogin();
         produtoTask.selecionarProduto();
+        checkoutTask.preencherCheckout();
     }
 }

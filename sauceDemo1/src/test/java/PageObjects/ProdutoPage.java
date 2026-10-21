@@ -13,6 +13,7 @@ public class ProdutoPage {
     }
 
     public WebElement getAddToCarButton(){
+
         return  driver.findElement(By.id("add-to-cart-sauce-labs-onesie"));
     }
 

@@ -22,5 +22,7 @@ public class CheckoutTask {
       checkoutPage.getLastNameInput().sendKeys("Mello");
       checkoutPage.getZipCodeInput().sendKeys("123456789");
       checkoutPage.getContinueButton().click();
+      genericValidacao.validacaoTitlePages("Checkout: Overview");
+      genericValidacao.validacaoProduto();
     }
 }
